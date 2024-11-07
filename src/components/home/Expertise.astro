@@ -4,37 +4,37 @@ const features = [
     id: 'expertise-1',
     name: 'Digital Experience Platforms',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We design and implement digital experience platforms that deliver seamless, personalized experiences across multiple channels, enhancing customer engagement and driving business growth.',
   },
   {
     id: 'expertise-2',
     name: 'Web & Mobile Development',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Our team develops high-performance websites and mobile applications tailored to your business needs, ensuring responsive, user-friendly, and scalable solutions for both desktop and mobile devices.',
   },
-  {
-    id: 'expertise-3',
-    name: 'Serverless Computing Platforms',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-  },
+  // {
+  //   id: 'expertise-3',
+  //   name: 'Serverless Computing Platforms',
+  //   description:
+  //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+  // },
   {
     id: 'expertise-4',
     name: 'Build & Test Automation Tools',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We create and integrate automation tools that streamline development processes, increase efficiency, and ensure consistent, error-free builds and tests, ultimately accelerating time to market.',
   },
   {
     id: 'expertise-5',
     name: 'Artificial Intelligence',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Our AI expertise leverages machine learning, natural language processing, and automation to build intelligent systems that solve complex problems, improve decision-making, and drive innovation.',
   },
   {
     id: 'expertise-6',
     name: 'Full project support',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'From initial concept to final delivery, we provide comprehensive project support, ensuring your success at every stage. Our team offers guidance, maintenance, and continuous improvement to ensure your project thrives long-term.',
   },
 ];
 ---
@@ -68,11 +68,11 @@ const features = [
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
-                    <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
+                    <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                       <span class="font-medium">{feature.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
-                          class="text-primary-600 dark:text-primary-400 h-6 w-6 rotate-0 transform transition duration-200 ease-in-out"
+                          class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
                           x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const features = [
                   </button>
                 </dt>
                 <dd class="pb-6 pr-6" id={feature.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
                     {feature.description}
                   </p>
                 </dd>
