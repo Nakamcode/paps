@@ -1,25 +1,25 @@
 ---
 const testimonials = [
   {
-    name: 'Rebecca Hayes',
-    description: 'Designer',
+    name: 'Gabriel Stein',
+    description: 'Growth Tech - Brazil',
     image: '/assets/testimonial-1.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“Glu Consult transformed our platform with seamless web and UI/UX design. Their expertise helped us create an experience that works flawlessly across all devices.”',
   },
   {
-    name: 'Rosa Spencer',
-    description: 'Team Leader',
+    name: 'Tobi Ajala',
+    description: 'Techtee',
     image: '/assets/testimonial-2.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“Glu Consult provided full project support, guiding us every step of the way. Their automation tools streamlined our workflow, and we’re thrilled with the results.”',
   },
   {
-    name: 'Christina Upton',
-    description: 'Manager',
+    name: 'Evans Nartey',
+    description: 'CEO - Theseux Development',
     image: '/assets/testimonial-3.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“Thanks to Glu Consult’s AI solutions, we’ve automated key processes, saving time and improving decisions. Their innovation and attention to detail have been invaluable.”',
   },
 ];
 ---
@@ -52,8 +52,15 @@ const testimonials = [
               <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
                 <p>{testimonial.message}</p>
               </blockquote>
-              <figcaption class="flex flex-col gap-4">
-                <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
+              <figcaption class="flex flex-col items-center gap-4">
+                <svg
+                  class="w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z" />
+                </svg>
                 <div class="text-center">
                   <div class="text-base font-medium">{testimonial.name}</div>
                   <div class="text-sm text-primary-950/70 dark:text-primary-200/70">
