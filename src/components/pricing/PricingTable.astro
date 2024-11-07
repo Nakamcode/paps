@@ -1,19 +1,25 @@
 ---
 const pricing = [
   {
-    name: 'Project Name',
-    description: 'For development, staging, and small production projects.',
+    name: 'Cofounderslab',
+    description:
+      'CoFoundersLab is the largest startup community on the Internet. Accelerate your business today.',
     isFlagged: true,
+    href: 'https://cofounderslab.com',
   },
   {
-    name: 'Project Name',
-    description: 'For development, staging, and small production projects.',
+    name: 'Cora',
+    description:
+      'Cora is a decentralized lending protocol where users can get non-liquidatable loans against ETH and more supported assets.',
     isFlagged: true,
+    href: 'https://cora.money',
   },
   {
-    name: 'Project Name',
-    description: 'For development, staging, and small production projects.',
+    name: 'WWF',
+    description:
+      'A global environmental charity focused on restoring nature by tackling the root causes of its decline, ensuring a thriving planet for future generations.',
     isFlagged: true,
+    href: 'https://www.wwf.org.uk/',
   },
   {
     name: 'Project Name',
@@ -61,7 +67,7 @@ const pricing = [
   <div class="mx-auto max-w-2xl px-4 sm:px-2 lg:max-w-7xl lg:px-8">
     <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
       {
-        pricing.map((item) => (
+        pricing.map((item, index) => (
           <div
             class:list={[
               'bg-red-100 relative flex flex-col gap-8 rounded-3xl p-8',
@@ -69,7 +75,7 @@ const pricing = [
             ]}
           >
             <div class="flex-1">
-              <img src="/public/assets/hero.jpg" alt="" />
+              <img src={`/public/assets/p${index + 1}.png`} alt="" />
               <h2 class="pt-3 text-xl font-medium">{item.name}</h2>
               {/* <p class="mt-4 flex items-baseline">
                 <span class="text-4xl font-medium tracking-tight">{item.price}</span>
@@ -97,7 +103,7 @@ const pricing = [
               </ul> */}
             </div>
             <a
-              href="#"
+              href={item.href}
               class="inline-flex w-full items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400"
             >
               Preview
